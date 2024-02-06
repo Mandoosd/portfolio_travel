@@ -1,0 +1,22 @@
+.header_top {}
+
+.header_top_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_top_wrap .customer ul {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.header_top_wrap .customer ul span {
+    font-size: 32px;
+}
+
+.header_top_wrap .customer ul li {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
