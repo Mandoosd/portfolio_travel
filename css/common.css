@@ -46,7 +46,7 @@
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 800;
     text-align: left;
 
@@ -68,9 +68,6 @@ h3 {
 
 strong {
     display: block;
-    font-size: 18px;
-    color: #666;
-    font-weight: 600;
 }
 
 button {
