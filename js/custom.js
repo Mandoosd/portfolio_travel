@@ -26,6 +26,17 @@ $(function () {
             prevEl: ".swiper-button-prev",
         },
     });
+    var Mbn_Slide = new Swiper('.mbn_slide', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        speed: 800,
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 
 
 });

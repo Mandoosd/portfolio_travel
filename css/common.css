@@ -1,7 +1,6 @@
 .inner {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .default {
@@ -64,17 +63,24 @@ h3 {
 
 }
 
-/* 14주차  추가 */
-
-strong {
-    display: block;
-}
-
 button {
-    background: transparent;
     border: none;
+    background: transparent;
 }
 
-p {
+.more {
     display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.more a {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+
+.more em {
+    font-weight: 600;
 }

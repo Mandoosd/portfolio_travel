@@ -1,347 +1,301 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>모두투어</title>
 
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/fonts.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모두투어</title>
 
-        <link rel="stylesheet" href="./css/common.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
-        <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
-        <script src="./js/jquery-1.12.4.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="./js/custom.js"></script>
-    </head>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/custom.js"></script>
+</head>
 
-    <body>
-        <div class="wrap">
-            <header id="header" class="header">
-                <div class="header_top">
-                    <div class="header_top_wrap inner">
-                        <h1>
-                            <a href=""
-                                ><img src="./images/LOGO01.png" alt=""
-                            /></a>
-                        </h1>
-                        <form action="">
-                            <input
-                                type="text"
-                                name="search"
-                                placeholder="검색어를 입력하세요."
-                            />
-                            <button class="search">
+<body>
+    <div class="wrap">
+        <header id="header" class="header">
+            <div class="header_top">
+                <div class="header_top_wrap inner">
+                    <h1>
+                        <a href=""><img src="./images/LOGO01.png" alt="" /></a>
+                    </h1>
+                    <form action="">
+                        <input type="text" name="search" placeholder="검색어를 입력하세요." />
+                        <button class="search">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </button>
+                    </form>
+                    <div class="customer">
+                        <ul>
+                            <a href="">
                                 <span class="material-symbols-outlined">
-                                    search
+                                    notifications
                                 </span>
-                            </button>
-                        </form>
-                        <div class="customer">
-                            <ul>
-                                <a href="">
-                                    <span class="material-symbols-outlined">
-                                        notifications
-                                    </span>
-                                    <li>알림</li>
-                                </a>
-                                <a href="">
-                                    <span class="material-symbols-outlined">
-                                        local_activity
-                                    </span>
-                                    <li>웰컴쿠폰</li>
-                                </a>
-                                <a href="">
-                                    <span class="material-symbols-outlined">
-                                        account_circle
-                                    </span>
-                                    <li>로그인</li>
-                                </a>
-                                <a href="">
-                                    <span class="material-symbols-outlined">
-                                        event_available
-                                    </span>
-                                    <li>예약내역</li>
-                                </a>
-                            </ul>
-                        </div>
+                                <li>알림</li>
+                            </a>
+                            <a href="">
+                                <span class="material-symbols-outlined">
+                                    local_activity
+                                </span>
+                                <li>웰컴쿠폰</li>
+                            </a>
+                            <a href="">
+                                <span class="material-symbols-outlined">
+                                    account_circle
+                                </span>
+                                <li>로그인</li>
+                            </a>
+                            <a href="">
+                                <span class="material-symbols-outlined">
+                                    event_available
+                                </span>
+                                <li>예약내역</li>
+                            </a>
+                        </ul>
                     </div>
                 </div>
-                <div class="header_bottom">
-                    <div class="header_bottom_wrap inner">
-                        <div class="header_bottom_left">
-                            <nav class="gnb">
-                                <ul>
-                                    <a href="">
-                                        <li>
-                                            <span
-                                                class="material-symbols-outlined"
-                                            >
-                                                menu
-                                            </span>
-                                        </li>
-                                    </a>
-                                    <a href="">
-                                        <li>전체메뉴</li>
-                                    </a>
+            </div>
+            <div class="header_bottom">
+                <div class="header_bottom_wrap inner">
+                    <div class="header_bottom_left">
+                        <nav class="gnb">
+                            <ul>
+                                <a href="">
+                                    <li>
+                                        <span class="material-symbols-outlined">
+                                            menu
+                                        </span>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>전체메뉴</li>
+                                </a>
 
-                                    <a href="">
-                                        <li>해외여행</li>
-                                    </a>
-                                    <a href="">
-                                        <li>국내여행</li>
-                                    </a>
-                                    <a href="">
-                                        <li>항공</li>
-                                    </a>
-                                    <a href="">
-                                        <li>호텔</li>
-                                    </a>
-                                    <a href="">
-                                        <li>투어/패스</li>
-                                    </a>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="header_bottom_right">
-                            <ul>
                                 <a href="">
-                                    <li>기획전</li>
+                                    <li>해외여행</li>
                                 </a>
                                 <a href="">
-                                    <li>이벤트</li>
+                                    <li>국내여행</li>
                                 </a>
                                 <a href="">
-                                    <li>고객센터</li>
+                                    <li>항공</li>
+                                </a>
+                                <a href="">
+                                    <li>호텔</li>
+                                </a>
+                                <a href="">
+                                    <li>투어/패스</li>
                                 </a>
                             </ul>
+                        </nav>
+                    </div>
+                    <div class="header_bottom_right">
+                        <ul>
+                            <a href="">
+                                <li>기획전</li>
+                            </a>
+                            <a href="">
+                                <li>이벤트</li>
+                            </a>
+                            <a href="">
+                                <li>고객센터</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main" class="main">
+            <section class="main_slide default">
+                <div class="main_slide_wrap swiper">
+                    <div class="main_slide_wrapper swiper-wrapper">
+                        <div class="itm itm01 swiper-slide">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/main_slide01.avif" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <strong>안녕! 그리스 </strong>
+                                    <span>아시아나항공 4,5월 출발 </span>
+                                    <p>
+                                        단 7회 한정, 100% 출발확정! 더
+                                        완벽한 그리스 여행을 원하시다면!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itm itm02 swiper-slide">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/main_slide02.avif" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <strong>역대급 엔저특집</strong>
+                                    <span>일본여행 특가모음 zip.</span>
+                                    <p>
+                                        조기예약 최대6만원 즉시할인! <br />
+                                        ~2.29까지
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itm itm03 swiper-slide">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/main_slide03.avif" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <strong>선착순 특가 대방출</strong>
+                                    <span>외항사타고 유럽가자!</span>
+                                    <p>
+                                        오직 모두투어에서만 만날 수 있는
+                                        <br />
+                                        두근두근 유럽여행 특가
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itm itm04 swiper-slide">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/main_slide04.avif" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <strong>동남아여행</strong>
+                                    <span>얼리버드 할인특별전</span>
+                                    <p>
+                                        미리 준비할수록 할인이 더 커져요!
+                                        <br />
+                                        ~2/29일까지
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itm itm05 swiper-slide">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/main_slide05.avif" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <strong>유럽시즌ON</strong>
+                                    <span>무조건 출발확정!</span>
+                                    <p>
+                                        #서유럽 #동유럽 #북유럽 #지중해
+                                        #중동 #비즈니스까지 <br />
+                                        BEST상품 최대혜택
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itm itm06 swiper-slide">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/main_slide06.avif" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <strong>부산/대구/제주 출발</strong>
+                                    <span>30일간 얼리버드 미친할인</span>
+                                    <p>
+                                        출발월에 따라 최대 6만원할인! <br />
+                                        ~2/29까지
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itm itm07 swiper-slide">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/main_slide07.avif" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <strong>가자!</strong>
+                                    <span>우리에겐 제주가 있다.</span>
+                                    <p>
+                                        4-6월 출발 <br />
+                                        제주항공 전노선 파격 초특가
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="modu_flex default">
+                <div class="modu_flex_wrap inner">
+                    <h2>이런 여행 어때요?</h2>
+                    <div class="itm_box">
+                        <div class="itm itm01">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/flex_01.jpg" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <span>호캉스</span>
+                                    <strong>[세부 제이파크 아일랜드]
+                                        막탄스윗가든룸</strong>
+                                    <p>#호화여행 #호캉스</p>
+                                    <em>999,999원 ~</em>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itm itm02">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/flex_02.jpg" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <span>에어텔</span>
+                                    <strong>[에어텔] 싱그러운 봄 상품, 큐슈
+                                        3/4일</strong>
+                                    <p>#제주항공 #큐슈특가 #봄상품</p>
+                                    <em>999,999원 ~</em>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itm itm03">
+                            <a href="">
+                                <figure>
+                                    <img src="./images/flex_03.jpg" alt="" />
+                                </figure>
+                                <div class="txt_box">
+                                    <span>전세기</span>
+                                    <strong>[전세기특가] 이탈리아 지중해
+                                        완전일주 9일</strong>
+                                    <p>
+                                        #전일정 4성호텔 #와이너리 투어
+                                        #포지타노 자유일정 #발도르차 평원
+                                    </p>
+                                    <em>999,999원 ~</em>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </header>
-            <main id="main" class="main">
-                <section class="main_slide">
-                    <div class="main_slide_wrap swiper">
-                        <div class="main_slide_wrapper swiper-wrapper">
-                            <div class="itm itm01 swiper-slide">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/main_slide01.avif"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <strong>안녕! 그리스 </strong>
-                                        <span>아시아나항공 4,5월 출발 </span>
-                                        <p>
-                                            단 7회 한정, 100% 출발확정! 더
-                                            완벽한 그리스 여행을 원하시다면!
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm itm02 swiper-slide">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/main_slide02.avif"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <strong>역대급 엔저특집</strong>
-                                        <span>일본여행 특가모음 zip.</span>
-                                        <p>
-                                            조기예약 최대6만원 즉시할인! <br />
-                                            ~2.29까지
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm itm03 swiper-slide">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/main_slide03.avif"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <strong>선착순 특가 대방출</strong>
-                                        <span>외항사타고 유럽가자!</span>
-                                        <p>
-                                            오직 모두투어에서만 만날 수 있는
-                                            <br />
-                                            두근두근 유럽여행 특가
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm itm04 swiper-slide">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/main_slide04.avif"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <strong>동남아여행</strong>
-                                        <span>얼리버드 할인특별전</span>
-                                        <p>
-                                            미리 준비할수록 할인이 더 커져요!
-                                            <br />
-                                            ~2/29일까지
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm itm05 swiper-slide">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/main_slide05.avif"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <strong>유럽시즌ON</strong>
-                                        <span>무조건 출발확정!</span>
-                                        <p>
-                                            #서유럽 #동유럽 #북유럽 #지중해
-                                            #중동 #비즈니스까지 <br />
-                                            BEST상품 최대혜택
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm itm06 swiper-slide">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/main_slide06.avif"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <strong>부산/대구/제주 출발</strong>
-                                        <span>30일간 얼리버드 미친할인</span>
-                                        <p>
-                                            출발월에 따라 최대 6만원할인! <br />
-                                            ~2/29까지
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm itm07 swiper-slide">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/main_slide07.avif"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <strong>가자!</strong>
-                                        <span>우리에겐 제주가 있다.</span>
-                                        <p>
-                                            4-6월 출발 <br />
-                                            제주항공 전노선 파격 초특가
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </section>
-                <section class="modu_flex">
-                    <div class="modu_flex_wrap inner">
-                        <h2>이런 여행 어때요?</h2>
-                        <div class="itm_box">
-                            <div class="itm itm01">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/flex_01.jpg"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <span>호캉스</span>
-                                        <strong
-                                            >[세부 제이파크 아일랜드]
-                                            막탄스윗가든룸</strong
-                                        >
-                                        <p>#호화여행 #호캉스</p>
-                                        <em>999,999원 ~</em>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm itm02">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/flex_02.jpg"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <span>에어텔</span>
-                                        <strong
-                                            >[에어텔] 싱그러운 봄 상품, 큐슈
-                                            3/4일</strong
-                                        >
-                                        <p>#제주항공 #큐슈특가 #봄상품</p>
-                                        <em>999,999원 ~</em>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm itm03">
-                                <a href="">
-                                    <figure>
-                                        <img
-                                            src="./images/flex_03.jpg"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <div class="txt_box">
-                                        <span>전세기</span>
-                                        <strong
-                                            >[전세기특가] 이탈리아 지중해
-                                            완전일주 9일</strong
-                                        >
-                                        <p>
-                                            #전일정 4성호텔 #와이너리 투어
-                                            #포지타노 자유일정 #발도르차 평원
-                                        </p>
-                                        <em>999,999원 ~</em>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="classic">
-                    <div class="classic_wrap inner">
-                        <h2>클래식여행</h2>
-                        <div class="grid_wrap">
-                            <div class="itm01 itm">
+            </section>
+            <section class="classic default">
+                <div class="classic_wrap inner">
+                    <h2>클래식여행</h2>
+                    <div class="grid_wrap">
+                        <div class="itm01 itm">
+                            <a href="">
                                 <div class="main_txt">
                                     <strong>FRANCE</strong>
                                     <div class="txt_box">
                                         <span>
                                             [자유일정포함] 서유럽
-                                            2국(영국/프랑스) 9,10일</span
-                                        >
+                                            2국 <br />(영국/프랑스) 9,10일</span>
                                         <p>
                                             #영국박물관 #옥스포드
                                             #비스터빌리지아울렛 #루브르박물관
@@ -349,8 +303,10 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="itm02 itm">
+                            </a>
+                        </div>
+                        <div class="itm02 itm">
+                            <a href="">
                                 <div class="main_txt">
                                     <strong>JAPAN</strong>
                                     <div class="txt_box">
@@ -362,8 +318,10 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="itm03 itm">
+                            </a>
+                        </div>
+                        <div class="itm03 itm">
+                            <a href="">
                                 <div class="main_txt">
                                     <strong>SWISS</strong>
                                     <div class="txt_box">
@@ -375,15 +333,15 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="itm04 itm">
+                            </a>
+                        </div>
+                        <div class="itm04 itm">
+                            <a href="">
                                 <div class="main_txt">
                                     <strong>TURKEY</strong>
                                     <div class="txt_box">
-                                        <span
-                                            >[HILTON 패키지] 아시아나 튀르키예
-                                            프리미어 일주 9일</span
-                                        >
+                                        <span>[HILTON 패키지] 아시아나 <br />튀르키예
+                                            프리미어 일주 9일</span>
                                         <p>
                                             #7대 관광지 #9대 특식 #전 일정 5성
                                             #터키 #튀르키예 #힐튼3박 #BIG3
@@ -391,44 +349,183 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="itm05 itm">
+                            </a>
+                        </div>
+                        <div class="itm05 itm">
+                            <a href="">
                                 <div class="main_txt">
                                     <strong>THAILAND</strong>
                                     <div class="txt_box">
-                                        <span
-                                            >방콕/파타야+쉐라톤+자유일정+산호섬</span
-                                        >
+                                        <span>방콕/파타야/쉐라톤 <br />자유일정+산호섬</span>
                                         <p>#가족여행 #산호섬 #자유일정</p>
                                     </div>
                                 </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mbn default" id="mbn">
+                <div class="mbn_wrap inner">
+                    <div class="left_txt">
+                        <span><a href="">Yellow series</a></span>
+                        <h2>MBN 여행 리얼리티 니돈내산 독박투어</h2>
+                        <p>
+                            이 정도 혜택이라면,<br />
+                            독박에 걸려도 좋아!<br />
+                            TV 속 여행지를 한 번에!
+                        </p>
+                        <div class="more">
+                            <a href=""><em>더 알아보기 </em></a>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="mbn_slide swiper">
+                        <div class="mbn_slide_wrapper swiper-wrapper">
+                            <div class="itm itm01 swiper-slide">
+                                <a href="">
+                                    <figure>
+                                        <img src="./images/left_txt_slide01.jpg" alt="">
+                                    </figure>
+                                    <div class="txt_box">
+                                        <span>[다낭] 호이안/바나힐 4/5일 [미케비치4성]</span>
+                                        <p>
+                                            #7대 관광지 #9대 특식 #전 일정 5성
+                                        </p>
+                                        <strong>999,999원</strong>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="itm itm02 swiper-slide">
+                                <a href="">
+                                    <figure>
+                                        <img src="./images/left_txt_slide02.jpg" alt="">
+                                    </figure>
+                                    <div class="txt_box">
+                                        <span>튀르키예
+                                            프리미어 일주 9일</span>
+                                        <p>
+                                            #터키 #튀르키예 #힐튼3박 #BIG3
+                                            선택관광 포함
+                                        </p>
+                                        <strong>999,999원</strong>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="itm itm03 swiper-slide">
+                                <a href="">
+                                    <figure>
+                                        <img src="./images/left_txt_slide03.jpg" alt="">
+                                    </figure>
+                                    <div class="txt_box">
+                                        <span>[라오스] 비엔티엔/방비엥 5일</span>
+                                        <p>#라오스 #패키지#모두투어 프로모션 #이벤트 #핵심관광지
+                                        </p>
+                                        <strong>999,999원</strong>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="itm itm04 swiper-slide">
+                                <a href="">
+                                    <figure>
+                                        <img src="./images/left_txt_slide04.avif" alt="">
+                                    </figure>
+                                    <div class="txt_box">
+                                        <span>[에어텔] 싱그러운 봄 상품, 큐슈 3/4일</span>
+                                        <p>#제주항공 #큐슈특가 #봄상품
+                                        </p>
+                                        <strong>999,999원</strong>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="itm itm05 swiper-slide">
+                                <a href="">
+                                    <figure>
+                                        <img src="./images/left_txt_slide05.avif" alt="">
+                                    </figure>
+                                    <div class="txt_box">
+                                        <span>[에어텔] 모음_나트랑편 5일 </span>
+                                        <p>#시내호텔4성포함 #여행자보험포함 #저렴한가격
+                                        </p>
+                                        <strong>999,999원</strong>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="mbn">
-                    <div class="mbn_wrap inner">
-                        <div class="left_txt">
-                            <span><a href="">Yellow series</a></span>
-                            <h2>MBN 여행 리얼리티 니돈내산 독박투어</h2>
-                            <p>
-                                이 정도 혜택이라면,<br />
-                                독박에 걸려도 좋아!<br />
-                                TV 속 여행지를 한 번에!
-                            </p>
-                            <div class="more">
-                                <a href=""
-                                    ><em>더 알아보기</em
-                                    ><span class="material-symbols-outlined">
-                                        north_east
-                                    </span></a
-                                >
+                </div>
+            </section>
+            <section class="notice default">
+                <div class="notice_wrap">
+                    <div class="notice_inner inner">
+                        <div class="notice_top">
+                            <div class="left">
+                                <strong>궁금한점이 있으시다면?</strong>
+                            </div>
+                            <div class="right">
+                                <strong>오늘의 여행소식</strong>
+                                <span class="material-symbols-outlined">
+                                    add
+                                </span>
+                            </div>
+                        </div>
+                        <div class="notice_bottom">
+                            <div class="left">
+                                <div class="itm01 itm">
+                                    <div class="itm_box">
+                                        <span class="material-symbols-outlined icon">
+                                            support_agent
+                                        </span>
+                                    </div>
+                                    <em>해외여행 상담</em>
+                                </div>
+                                <div class="itm02 itm">
+                                    <div class="itm_box">
+                                        <i class="xi-kakaotalk icon"></i>
+                                    </div>
+                                    <em>카카오톡 상담</em>
+                                </div>
+                                <div class="itm03 itm">
+                                    <div class="itm_box">
+                                        <span class="material-symbols-outlined icon">
+                                            tooltip
+                                        </span>
+                                    </div>
+                                    <em>문자 상담</em>
+                                </div>
+                                <div class="itm04 itm">
+                                    <div class="itm_box">
+                                        <span class="material-symbols-outlined icon">
+                                            phone_in_talk
+                                        </span>
+                                    </div>
+                                    <em>전화 상담</em>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <a href="">
+                                        <li><em>2024 여행가는달</em>ㅣ<span>대한민국 숙박 페스타</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li></li>
+                                    </a>
+                                    <a href="">
+                                        <li></li>
+                                    </a>
+                                    <a href="">
+                                        <li></li>
+                                    </a>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </section>
-            </main>
-            <footer id="footer" class="footer"></footer>
-        </div>
-    </body>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="footer"></footer>
+    </div>
+</body>
+
 </html>
