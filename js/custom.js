@@ -38,5 +38,12 @@ $(function () {
         },
     });
 
+    $('.classic .classic_wrap .grid_wrap .itm').on('mouseenter',
+        function () {
+            $('.classic .classic_wrap .grid_wrap .itm').removeClass('on');
+            $(this).addClass('on');
+        })
+
+
 
 });

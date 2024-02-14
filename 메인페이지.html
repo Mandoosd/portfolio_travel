@@ -21,18 +21,17 @@
 <body>
     <div class="wrap">
         <header id="header" class="header">
-            <div class="header_top">
+            <div class="header_top inner">
                 <div class="header_top_wrap inner">
                     <h1>
                         <a href=""><img src="./images/LOGO01.png" alt="" /></a>
                     </h1>
-                    <form action="">
+                    <form id="form" action="">
                         <input type="text" name="search" placeholder="검색어를 입력하세요." />
-                        <button class="search">
-                            <span class="material-symbols-outlined">
+                        <label><input type="submit" name="" value="" class="q_btn"><span
+                                class="material-symbols-outlined">
                                 search
-                            </span>
-                        </button>
+                            </span></label>
                     </form>
                     <div class="customer">
                         <ul>
@@ -61,6 +60,13 @@
                                 <li>예약내역</li>
                             </a>
                         </ul>
+                        <div class="m_btn">
+                            <button>
+                                <span class="material-symbols-outlined">
+                                    menu
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,7 +121,7 @@
             </div>
         </header>
         <main id="main" class="main">
-            <section class="main_slide default">
+            <section class="main_slide ">
                 <div class="main_slide_wrap swiper">
                     <div class="main_slide_wrapper swiper-wrapper">
                         <div class="itm itm01 swiper-slide">
@@ -127,8 +133,8 @@
                                     <strong>안녕! 그리스 </strong>
                                     <span>아시아나항공 4,5월 출발 </span>
                                     <p>
-                                        단 7회 한정, 100% 출발확정! 더
-                                        완벽한 그리스 여행을 원하시다면!
+                                        단 7회 한정, 100% 출발확정! <br />
+                                        더 완벽한 그리스 여행을 원하신다면!
                                     </p>
                                 </div>
                             </a>
@@ -190,7 +196,7 @@
                                     <span>무조건 출발확정!</span>
                                     <p>
                                         #서유럽 #동유럽 #북유럽 #지중해
-                                        #중동 #비즈니스까지 <br />
+                                        #중동 <br />
                                         BEST상품 최대혜택
                                     </p>
                                 </div>
@@ -227,9 +233,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                    <div class="sl_btn_wrap">
+                        <div class="swiper-button-next sl_btn"></div>
+                        <div class="swiper-button-prev sl_btn"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </section>
             <section class="modu_flex default">
@@ -288,7 +296,7 @@
                 <div class="classic_wrap inner">
                     <h2>클래식여행</h2>
                     <div class="grid_wrap">
-                        <div class="itm01 itm">
+                        <div class="itm01 itm on">
                             <a href="">
                                 <div class="main_txt">
                                     <strong>FRANCE</strong>
@@ -465,42 +473,52 @@
                             </div>
                             <div class="right">
                                 <strong>오늘의 여행소식</strong>
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
+                                <a href="">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </a>
                             </div>
                         </div>
                         <div class="notice_bottom">
                             <div class="left">
                                 <div class="itm01 itm">
-                                    <div class="itm_box">
-                                        <span class="material-symbols-outlined icon">
-                                            support_agent
-                                        </span>
-                                    </div>
-                                    <em>해외여행 상담</em>
+                                    <a href="">
+                                        <div class="itm_box">
+                                            <span class="material-symbols-outlined icon">
+                                                support_agent
+                                            </span>
+                                        </div>
+                                        <em>해외여행 상담</em>
+                                    </a>
                                 </div>
                                 <div class="itm02 itm">
-                                    <div class="itm_box">
-                                        <i class="xi-kakaotalk icon"></i>
-                                    </div>
-                                    <em>카카오톡 상담</em>
+                                    <a href="">
+                                        <div class="itm_box">
+                                            <i class="xi-kakaotalk icon"></i>
+                                        </div>
+                                        <em>카카오톡 상담</em>
+                                    </a>
                                 </div>
                                 <div class="itm03 itm">
-                                    <div class="itm_box">
-                                        <span class="material-symbols-outlined icon">
-                                            tooltip
-                                        </span>
-                                    </div>
-                                    <em>문자 상담</em>
+                                    <a href="">
+                                        <div class="itm_box">
+                                            <span class="material-symbols-outlined icon">
+                                                tooltip
+                                            </span>
+                                        </div>
+                                        <em>문자 상담</em>
+                                    </a>
                                 </div>
                                 <div class="itm04 itm">
-                                    <div class="itm_box">
-                                        <span class="material-symbols-outlined icon">
-                                            phone_in_talk
-                                        </span>
-                                    </div>
-                                    <em>전화 상담</em>
+                                    <a href="">
+                                        <div class="itm_box">
+                                            <span class="material-symbols-outlined icon">
+                                                phone_in_talk
+                                            </span>
+                                        </div>
+                                        <em>전화 상담</em>
+                                    </a>
                                 </div>
                             </div>
                             <div class="right">
@@ -509,13 +527,13 @@
                                         <li><em>2024 여행가는달</em>ㅣ<span>대한민국 숙박 페스타</span></li>
                                     </a>
                                     <a href="">
-                                        <li></li>
+                                        <li><em>대구석 기자단</em>ㅣ<span>‘다님’ 8기 모집</span></li>
                                     </a>
                                     <a href="">
-                                        <li></li>
+                                        <li><em>대구석 대학생 기자단</em>ㅣ<span>‘트래블리더’ 16기 모집</span></li>
                                     </a>
                                     <a href="">
-                                        <li></li>
+                                        <li><em>2024 제 9기</em>ㅣ<span>영남알프스학교 수강생 모집</span></li>
                                     </a>
                                 </ul>
                             </div>
@@ -524,7 +542,87 @@
                 </div>
             </section>
         </main>
-        <footer id="footer" class="footer"></footer>
+        <footer id="footer" class="footer">
+            <div class="footer_wrap">
+                <div class="footer_top ">
+                    <div class="footer_top_wrap inner">
+                        <ul>
+                            <li><a href="">회사소개</a></li>
+                            <li><a href="">개인정보처리방침</a></li>
+                            <li><a href="">여행약관</a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">여행보험</a></li>
+                            <li><a href="">마케팅제휴문의</a></li>
+                            <li><a href="">온라인제휴안내</a></li>
+                            <li><a href="">여행플래너</a></li>
+                            <li><a href="">대리점개설문의</a></li>
+                        </ul>
+                        <div class="lnk">
+                            <select name="lnk" id="lnk">
+                                <option value="">패밀리 사이트</option>
+                                <option value="http://naver.com">공지사항</option>
+                                <option value="http://naver.com">xxxx</option>
+                                <option value="http://naver.com">xxx</option>
+                            </select>
+                            <script>
+                                $(function () {
+                                    $('#lnk').on('change', function () {
+                                        //console.log($(this).val());
+                                        let lnk = $(this).val();
+                                        lnk && window.open(lnk);
+                                    })
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_wrap inner">
+                        <div class="left">
+                            <div class="left_top">
+                                <ul>
+                                    <li><a href=""><span>(주)모두투어네트워크대표이사</span>
+                                            <p>우종웅</p>
+                                        </a></li>
+                                    <li><a href=""><span>사업자등록번호</span>
+                                            <p>202-81-45295</p>
+                                        </a></li>
+                                    <li><a href=""><span>통신판매업신고번호</span>
+                                            <p>중구 제03500호</p>
+                                        </a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href=""><span>관광사업자 등록번호</span>
+                                            <p>1989-04(서울특별시 중구)</p>
+                                        </a></li>
+                                    <li><a href=""><span>주소</span>
+                                            <p>서울특별시 중구 을지로 16 백남빌딩 5층</p>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <div class="left_bottom">
+                                <ul>
+                                    <li>※부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.</li>
+                                    <li>※(주)모두투어는 항공사가 제공하는 개별 항공권 및 여행사가 제공하는 일부 여행상품에 대하여 통신판매중개자의 지위를 가지며, <br />해당
+                                        상품,
+                                        상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.</li>
+                                    <li class="copy">&copy; 1989-2023 MODETOUR. ALL RIGHTS RESERVED.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <figure><img src="./images/footer-image01.png" alt=""></figure>
+                            <div class="sns">
+                                <a href=""><i class="xi-instagram"></i></a>
+                                <a href=""><i class="xi-facebook"></i></a>
+                                <a href=""><i class="xi-youtube-play"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
