@@ -1,5 +1,9 @@
 $(function () {
 
+    $('.m_btn').on('click', function () {
+        $('#header').toggleClass('on');
+    });
+
     var Main_Slide_Wrap = new Swiper('.main_slide_wrap', {
         loop: true,
         grabCursor: true,
@@ -31,6 +35,17 @@ $(function () {
         slidesPerView: 3,
         spaceBetween: 30,
         speed: 800,
+        breakpoints: {
+            500: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+
+        },
 
         navigation: {
             nextEl: ".swiper-button-next",
