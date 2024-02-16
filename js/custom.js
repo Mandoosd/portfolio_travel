@@ -36,7 +36,7 @@ $(function () {
         spaceBetween: 30,
         speed: 800,
         breakpoints: {
-            500: {
+            200: {
                 slidesPerView: 1,
                 spaceBetween: 30,
             },
